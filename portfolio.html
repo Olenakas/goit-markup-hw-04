@@ -14,14 +14,14 @@
     <header class="page-header">
         <div class="container page-header-container">
             <nav class="page-nav">
-                <a class="logo logo-header link" href="#">
+                <a class="logo logo-header link" href="./index.htm">
                     <p class="logo-text-part-one">Web<span class="logo-text-part-two-theme-light">Studio</span></p>
                 </a>
                 <ul class="menu list">
                     <li class="menu-item">
                         <a class="menu-link link" href="index.html">Studio</a></li>
                     <li class="menu-item">
-                        <a class="menu-link link" href="">Portfolio</a></li>
+                        <a class="memu-link-active menu-link link" href="">Portfolio</a></li>
                     <li class="menu-item">
                         <a class="menu-link link" href="">Contacts</a></li>
                 </ul>
@@ -35,135 +35,139 @@
         </div>
     </header>
     <!--PORTFOLIO-->
-    <main class="portfolio">
-        <div class="container">
-            <ul class="filtres employees list">
-                <li class="employees-card-filtres">
-                    <button class="btn filtres-btn" type="button">All</button>
+    <main>
+        <section class="portfolio">      
+            <div class="container">
+                <h2 hidden class="heading">Portfolio</h2>
+                <ul class="filtres employees list">
+                    <li class="employees-card-filtres">
+                        <button class="btn filtres-btn" type="button">All</button>
+                    </li>
+                    <li class="employees-card-filtres">
+                        <button class="btn filtres-btn" type="button">Web Site</button>
+                    </li>
+                    <li class="employees-card-filtres">
+                        <button class="btn filtres-btn" type="button">App</button>
+                    </li>
+                    <li class="employees-card-filtres">
+                        <button class="btn filtres-btn" type="button">Design</button>
+                    </li>
+                    <li class="employees-card-filtres">
+                        <button class="btn filtres-btn" type="button">Marketing</button>
+                    </li>
+                </ul>       
+                <ul class="employees wrap-card-portfolio list">
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/banking-app-interface-concept.jpg" 
+                        alt="Multiple screens of the banking application interface"
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Banking App Interface Concept</h3>
+                            <p class="text-body">App</p>    
+                        </div>
+                    </li>
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/cashless-payment.jpg" 
+                        alt="Qr-code payment with mobile phone approach"
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Cashless Payment</h3>
+                            <p class="text-body">Marketing</p>
+                        </div>          
+                    </li>
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/meditaion-app.jpg" 
+                        alt="Meditation app on laptop and moale screens"
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Meditaion App</h3>
+                            <p class="text-body">App</p>
+                        </div> 
                 </li>
-                <li class="employees-card-filtres">
-                    <button class="btn filtres-btn" type="button">Web Site</button>
-                </li>
-                <li class="employees-card-filtres">
-                    <button class="btn filtres-btn" type="button">App</button>
-                </li>
-                <li class="employees-card-filtres">
-                    <button class="btn filtres-btn" type="button">Design</button>
-                </li>
-                <li class="employees-card-filtres">
-                    <button class="btn filtres-btn" type="button">Marketing</button>
-                </li>
-            </ul>       
-            <ul class="employees all-card list">
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="./images/portfolio/banking-app-interface-concept.jpg" 
-                    alt="Multiple screens of the banking application interface"
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Banking App Interface Concept</h3>
-                        <p>App</p>    
-                    </div>
-                </li>
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="./images/portfolio/cashless-payment.jpg" 
-                    alt="Qr-code payment with mobile phone approach"
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Cashless Payment</h3>
-                        <p>Marketing</p>
-                    </div>          
-                </li>
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="/images/portfolio/meditaion-app.jpg" 
-                    alt="Meditation app on laptop and moale screens"
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Meditaion App</h3>
-                        <p>App</p>
-                    </div> 
-               </li>
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="./images/portfolio/taxi-service.jpg" 
-                    alt="The driver behind the wheel and the mobile app"
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Taxi Service</h3>
-                        <p>Marketing</p>
-                    </div>              
-                </li>
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="./images/portfolio/screen-illustrations.jpg" 
-                    alt="A mockup of a mobile phone and four screens with screensavers"
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Screen Illustrations</h3>
-                        <p>Design</p>
-                    </div>         
-                </li>
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="./images/portfolio/online-courses.jpg" 
-                    alt="girl in headphones "
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Online Courses</h3>
-                        <p>Marketing</p>
-                    </div>            
-                </li>
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="./images/portfolio/instagram-stories-concept.jpg" 
-                    alt="Multiple screens of instagram storits of smart technologies"
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Instagram Stories Concept</h3>
-                        <p>Design</p>
-                    </div>      
-                </li>
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="./images/portfolio/organic-food.jpg" 
-                    alt="A women carries fruit in a bag"
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Organic Food</h3>
-                        <p>Web Site</p>
-                    </div>               
-                </li>
-                <li class="employees-card-wraper employees-card">
-                    <img
-                    src="./images/portfolio/fresh-coffee.jpg" 
-                    alt="A man pours milk in a coffe"
-                    width="358"
-                    height="300">
-                    <div class="employees-card-content-wraper">
-                        <h3>Fresh Coffee</h3>
-                        <p>Web Site</p>
-                    </div>          
-                </li>
-            </ul>
-        </div>
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/taxi-service.jpg" 
+                        alt="The driver behind the wheel and the mobile app"
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Taxi Service</h3>
+                            <p class="text-body">Marketing</p>
+                        </div>              
+                    </li>
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/screen-illustrations.jpg" 
+                        alt="A mockup of a mobile phone and four screens with screensavers"
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Screen Illustrations</h3>
+                            <p class="text-body">Design</p>
+                        </div>         
+                    </li>
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/online-courses.jpg" 
+                        alt="girl in headphones "
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Online Courses</h3>
+                            <p class="text-body">Marketing</p>
+                        </div>            
+                    </li>
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/instagram-stories-concept.jpg" 
+                        alt="Multiple screens of instagram storits of smart technologies"
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Instagram Stories Concept</h3>
+                            <p class="text-body">Design</p>
+                        </div>      
+                    </li>
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/organic-food.jpg" 
+                        alt="A women carries fruit in a bag"
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Organic Food</h3>
+                            <p class="text-body">Web Site</p>
+                        </div>               
+                    </li>
+                    <li class="employees-card-wraper employees-card">
+                        <img
+                        src="./images/portfolio/fresh-coffee.jpg" 
+                        alt="A man pours milk in a coffe"
+                        width="358"
+                        height="300">
+                        <div class="employees-card-content-wraper">
+                            <h3 class="subtitle">Fresh Coffee</h3>
+                            <p class="text-body">Web Site</p>
+                        </div>          
+                    </li>
+                </ul>
+            </div>
+        </section>
+          
     </main>
     <!--FOOTER-->
     <footer class="footer">
         <div class="container">
-            <a class="logo logo-footer link" href="#">
+            <a class="logo link" href="#">
                 <p class="logo-text-part-one">Web<span class="logo-text-part-two-theme-dark">Studio</span></p>
             </a>
-            <p class="text-theme-dark">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+            <p class="text-footer text-theme-dark text-body">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
     </footer> 
 </body>
