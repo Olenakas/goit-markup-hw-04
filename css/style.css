@@ -5,7 +5,7 @@
     --primary-text-color-theme-dark:#ffff;
     --secondary-text-color-theme-light: #434455;
     --secondary-text-color-theme-dark: #e7e9fc;    
-    --background-color-body-theme-light: #fff;
+    --background-color-body-theme-light: #ffff;
     --background-color-body-theme-dark:#2E2F42;
     --additiomal-color: #F4F4FD;
 }
@@ -114,10 +114,11 @@ button{
     justify-content: center;
 }
 .employees-card-advantades:not(:nth-child(4n)){
-    margin-right: 24px;
+    margin-right: 24px;    
 }
 .employees-card-advantades{
     width: 264px;
+    
     /*flex-basis: calc((100%-48px)/4);*/
 }
 .employees-card:not(:nth-child(3n)){
@@ -134,19 +135,19 @@ button{
 }
 .employees-card-four{
    /* flex-basis: calc((100%-40px)/4);*/
-    background: white;
+    background: var(--background-color-body-theme-light);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 .employees-card-wraper{
-    background: white;    
+    background: var(--background-color-body-theme-light);    
 }
 .employees-card-content-wraper{
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--secondary-text-color-theme-dark);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
@@ -156,7 +157,7 @@ button{
 .page-header{   
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--secondary-text-color-theme-dark);
 }
 .page-header-container{
     display: flex;
@@ -232,19 +233,21 @@ button{
 }
 .modal-btn:hover,
 .modal-btn:focus{
-    background: var(--accent-color-hover);
+    background var(--accent-color-hover);:
   
 }
 /*==========/HERO SECTION==========*/
 /*==========ADVANTADES==========*/
-.advantades-list-icon{
-    display: block;
+.thumb{
+    display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
-
-    background: #F4F4FD;
+    background: var(--additiomal-color);
     border-radius: 4px;
+    margin-bottom: 8px;
 }
+
+
 /*==========/ADVANTADES==========*/
 /*==========SERVICES==========*/
 .services{
@@ -253,7 +256,7 @@ button{
 /*==========/SERVISES========*/
 /*==========TEAM==========*/
 .team{
-    background: #F4F4FD;}
+    background: var(--additiomal-color);}
 
     .employees-position{   
         margin-bottom: 8px;
@@ -270,16 +273,16 @@ button{
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: #4D5AE5;
+        background-color: var(--accent-color);
     }
     .social-list-link:hover,
     .social-list-link:focus{
-        background-color: #404BBF;
+        background-color: var(--accent-color-hover);
     
     
     }
     .social-list-icon{
-        fill: #F4F4FD;
+        fill: var(--additiomal-color);
     }
 
 /*==========/TEAМ=====*/
@@ -301,10 +304,15 @@ button{
 }
 .customers-list-link:hover,
 .customers-list-link:focus{
-border: 1px solid #404BBF;
+border: 1px solid var(--accent-color-hover);
 }
-.customers-list-icon{
+.customers-list-icon:hover,
+.customers-list-icon:focus{
 fill: #404BBF;
+}
+.customers-list-icon-img:hover,
+.customers-list-icon-img:focus{
+    fill: var(--accent-color-hover);
 }
 
 
@@ -323,7 +331,7 @@ fill: #404BBF;
     width: 264px;
 }
 .text-theme-dark{
-    color: #E7E9FC;
+    color: var(--secondary-text-color-theme-dark);
 }
 /*==========/FOOTER==========*/
 /*==========PORTFOLIO=======*/
@@ -342,7 +350,7 @@ fill: #404BBF;
     font-size: 16px;
     line-height: 1.5x;
     background: var(--additiomal-color);
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--secondary-text-color-theme-dark);
     border-radius: 4px;
     padding: 12px 24px;
 }
