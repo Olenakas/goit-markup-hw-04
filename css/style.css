@@ -14,6 +14,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color-theme-light);
     background-color: var(--background-color-body-theme-light);
+
 }
 h1,
 h2,
@@ -79,6 +80,14 @@ button{
     letter-spacing: 0.02em;
     margin-bottom: 8px;    
 }
+.subtitle-footer{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-dark);
+    margin-bottom: 16px; 
+}
 .text-body{
     font-size: 16px;
     line-height: 1.5;
@@ -139,16 +148,23 @@ button{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
+
 .employees-card-wraper{
     background: var(--background-color-body-theme-light);    
 }
+
 .employees-card-content-wraper{
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid var(--secondary-text-color-theme-dark);
+    border: 1px solid #E7E9FC;;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); 
+}
+.employees-card-content-wraper:hover,
+.employees-card-content-wraper:focus{
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*==========EMPLOYEES==========*/
@@ -233,7 +249,7 @@ button{
 }
 .modal-btn:hover,
 .modal-btn:focus{
-    background var(--accent-color-hover);:
+    background: var(--accent-color-hover);
   
 }
 /*==========/HERO SECTION==========*/
@@ -258,32 +274,32 @@ button{
 .team{
     background: var(--additiomal-color);}
 
-    .employees-position{   
-        margin-bottom: 8px;
-    }
-    .social-list{
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-    }
-    .social-list-link{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: var(--accent-color);
-    }
-    .social-list-link:hover,
-    .social-list-link:focus{
-        background-color: var(--accent-color-hover);
-    
-    
-    }
-    .social-list-icon{
-        fill: var(--additiomal-color);
-    }
+.employees-position{   
+    margin-bottom: 8px;
+}
+.social-list{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+.social-list-link:hover,
+.social-list-link:focus{
+    background-color: var(--accent-color-hover);
+
+
+}
+.social-list-icon{
+    fill: var(--additiomal-color);
+}
 
 /*==========/TEAМ=====*/
 /*==========CUSTOMERS==========*/
@@ -298,25 +314,15 @@ button{
     align-items: center;
     width: 168px;
     height: 88px;
-    gap: ; 
+    fill: #8E8F99;    
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 .customers-list-link:hover,
 .customers-list-link:focus{
 border: 1px solid var(--accent-color-hover);
-}
-.customers-list-icon:hover,
-.customers-list-icon:focus{
 fill: #404BBF;
 }
-.customers-list-icon-img:hover,
-.customers-list-icon-img:focus{
-    fill: var(--accent-color-hover);
-}
-
-
-
 /*==========/CUSTOMERS==========*/
 /*==========FOOTER=======*/
 .footer{
@@ -325,14 +331,42 @@ fill: #404BBF;
     padding-bottom: 100px;
     background-color: var(--background-color-body-theme-dark);
 }
-
-.text-footer{
-    margin-top: 16px;
-    width: 264px;
+.footer-wrap{
+    display: flex;
 }
+
+
+.footer-part-one{
+    width: 264px;
+    margin-right: 120px; 
+}
+.text-footer{
+    margin-top: 16px; 
+}
+.footer-part-two{
+    width: 208px; 
+}
+
 .text-theme-dark{
     color: var(--secondary-text-color-theme-dark);
 }
+.social-list-link-dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.social-list-link-dark:hover,
+.social-list-link-dark:focus{
+    background: #31D0AA;
+}
+
+
+
+
 /*==========/FOOTER==========*/
 /*==========PORTFOLIO=======*/
 .portfolio{
