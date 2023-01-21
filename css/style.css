@@ -9,12 +9,10 @@
     --background-color-body-theme-dark:#2E2F42;
     --additiomal-color: #F4F4FD;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color-theme-light);
     background-color: var(--background-color-body-theme-light);
-
 }
 h1,
 h2,
@@ -41,6 +39,7 @@ button{
 }
 .link{
     text-decoration: none;
+    color: none;
 }
 .container{
     width: 1158px;
@@ -53,7 +52,6 @@ button{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
 /*==========COMPONENTS==========*/
 .title{
     width: 496px;
@@ -63,8 +61,7 @@ button{
     color: var(--primary-text-color-theme-dark);
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 48px;
-    
+    margin-bottom: 48px;    
 }
 .heading{
     font-size: 36px;
@@ -78,8 +75,10 @@ button{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
-        
+    margin-bottom: 8px;        
+}
+.subtitle-link{
+    color: var(--primary-text-color-theme-light);
 }
 .subtitle-footer{
     font-weight: 500;
@@ -98,7 +97,6 @@ button{
 .text-center{
     text-align: center;
 }
-
 /*logo*/
 .logo-text-part-one{
     font-family: 'Raleway';
@@ -123,12 +121,19 @@ button{
     flex-wrap: wrap;  
     justify-content: center;
 }
+.employees-card-content-wraper{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #E7E9FC;;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); 
+}
 .employees-card-advantades:not(:nth-child(4n)){
     margin-right: 24px;    
 }
 .employees-card-advantades{
-    width: 264px;
-    
+    width: 264px;    
     /*flex-basis: calc((100%-48px)/4);*/
 }
 .employees-card:not(:nth-child(3n)){
@@ -149,12 +154,7 @@ button{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-
-
-
-
 /*==========EMPLOYEES==========*/
-
 /*==========HEADER==========*/
 .page-header{   
     padding-top: 24px;
@@ -224,7 +224,6 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 .modal-btn{
     padding-top: 16px;
@@ -243,8 +242,7 @@ button{
 }
 .modal-btn:hover,
 .modal-btn:focus{
-    background: var(--accent-color-hover);
-  
+    background: var(--accent-color-hover);  
 }
 /*==========/HERO SECTION==========*/
 /*==========ADVANTADES==========*/
@@ -258,8 +256,6 @@ button{
     border-radius: 4px;
     margin-bottom: 8px;
 }
-
-
 /*==========/ADVANTADES==========*/
 /*==========SERVICES==========*/
 .services{
@@ -268,15 +264,14 @@ button{
 /*==========/SERVISES========*/
 /*==========TEAM==========*/
 .team{
-    background: var(--additiomal-color);}
-
+    background: var(--additiomal-color);
+}
 .employees-position{   
     margin-bottom: 8px;
 }
 .social-list{
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between;   
 }
 .social-list-link{
     display: flex;
@@ -290,13 +285,10 @@ button{
 .social-list-link:hover,
 .social-list-link:focus{
     background-color: var(--accent-color-hover);
-
-
 }
 .social-list-icon{
     fill: var(--additiomal-color);
 }
-
 /*==========/TEAМ=====*/
 /*==========CUSTOMERS==========*/
 .customers-list{
@@ -316,8 +308,8 @@ button{
 }
 .customers-list-link:hover,
 .customers-list-link:focus{
-border: 1px solid var(--accent-color-hover);
-fill: #404BBF;
+    border: 1px solid var(--accent-color-hover);
+    fill: #404BBF;
 }
 /*==========/CUSTOMERS==========*/
 /*==========FOOTER=======*/
@@ -330,8 +322,6 @@ fill: #404BBF;
 .footer-wrap{
     display: flex;
 }
-
-
 .footer-part-one{
     width: 264px;
     margin-right: 120px; 
@@ -342,7 +332,6 @@ fill: #404BBF;
 .footer-part-two{
     width: 208px; 
 }
-
 .text-theme-dark{
     color: var(--secondary-text-color-theme-dark);
 }
@@ -359,10 +348,6 @@ fill: #404BBF;
 .social-list-link-dark:focus{
     background: #31D0AA;
 }
-
-
-
-
 /*==========/FOOTER==========*/
 /*==========PORTFOLIO=======*/
 .portfolio{
@@ -370,31 +355,16 @@ fill: #404BBF;
     padding-bottom: 120px;
 }
 .portfolio-card-link{
-    background: var(--background-color-body-theme-light);    
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color-body-theme-light);  
 }
-
-.portfolio-card-content-wraper{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 1px solid #E7E9FC;;
-    background: #FFFFFF;
-    border: 1px solid #E7E9FC;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-.portfolio-card-link .portfolio-card-content-wraper:hover,
-.portfolio-card-link .portfolio-card-content-wraper:focus{   
-    border: 0.5px solid #F4F4FD;
+.portfolio-card-link:hover,
+.portfolio-card-link:focus{   
+    /*border: 0.5px solid #F4F4FD;*/
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-/*.employees-card-content-wraper:hover,
-.employees-card-content-wraper:focus{
-    border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}*/
-
-
 /*==========/PORTFOLIO=======*/
 /*==========PORTFOLIO FILTRES=======*/
 .filtres{   
